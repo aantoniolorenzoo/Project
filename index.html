@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 5 Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><span class="text-warning">Pescaderia</span>María Jesús</a
+        >
+        <!-- poner barra de busqueda en azul con las letras igual q en el porjecto normal-->
+        <!--pasar tipografia-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sellers">Sellers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/home1.jpg" class="d-block w-100" alt="..." />
+          <!--insertar imagen en src-->
+          <div class="carousel-caption">
+            <h5>The Golden Fish</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+            <p><a href="#" class="btn btn-warning mt3">Learn More</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/home2.jpg" class="d-block w-100" alt="..." />
+          <!--insertar imagen en src-->
+          <div class="carousel-caption">
+            <h5>Quality</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p><a href="#" class="btn btn-warning mt3">Learn More</a></p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/home3.jpg" class="d-block w-100" alt="..." />
+          <!--insertar imagen en src-->
+          <div class="carousel-caption">
+            <h5>Variety</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+            <p><a href="#" class="btn btn-warning mt3">Learn More</a></p>
+            <!-- cambiar colores de botones -->
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- about section -->
+
+    <section id="about" class="about section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-12">
+            <div class="about-img">
+              <img src="./img/boquerones.jpg" alt="" class="img-fluic" />
+              <!--insertar imaagen si no entender mirar min 15.14 -->
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+            <div class="about-text">
+              <h2>
+                We provide best Quality <br />
+                Services Ever
+              </h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius
+                ea fugit velit ipsa nesciunt beatae autem doloribus, blanditiis
+                cum soluta officia nemo dolorem. Similique, quia. Eveniet
+                expedita earum error numquam?
+              </p>
+              <a href="#" class="btn btn-warning">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services section -->
+
+    <section id="services" class="services sectionpadding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2>Our Services</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi, veniam beatae possimus optio sed adipisci rem
+                repellendus<br />
+                ut impedit perspiciatis quidem quaerat. Atque distinctio odit
+                eaque natus voluptate nobis nulla.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="card text-white text-center bg-dark pb-2">
+              <div class="card-body">
+                <i class="bi bi-bookmark-heart-fill"></i>
+                <h3 class="card-tittle">Best Quality</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Totam, rerum reprehenderit impedit recusandae sed corrupti
+                  ipsum dicta, tempora maxime, perferendis dolore. Quos sequi
+                  voluptates et, nostrum adipisci eveniet quaerat quod!
+                </p>
+                <button class="btn btn-warning text-dark">Read More</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card text-white text-center bg-dark pb-2">
+              <div class="card-body">
+                <i class="bi bi-emoji-laughing-fill"></i>
+                <h3 class="card-tittle">Integrity</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Totam, rerum reprehenderit impedit recusandae sed corrupti
+                  ipsum dicta, tempora maxime, perferendis dolore. Quos sequi
+                  voluptates et, nostrum adipisci eveniet quaerat quod!
+                </p>
+                <button class="btn btn-warning text-dark">Read More</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <div class="card text-white text-center bg-dark pb-2">
+              <div class="card-body">
+                <i class="bi bi-truck"></i>
+                <h3 class="card-tittle">Home delivery</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Totam, rerum reprehenderit impedit recusandae sed corrupti
+                  ipsum dicta, tempora maxime, perferendis dolore. Quos sequi
+                  voluptates et, nostrum adipisci eveniet quaerat quod!
+                </p>
+                <button class="btn btn-warning text-dark">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio  -->
+    <section id="portfolio" class="portfolio section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2>Our Fresh Fish</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi, veniam beatae possimus optio sed adipisci rem
+                repellendus<br />
+                ut impedit perspiciatis quidem quaerat. Atque distinctio odit
+                eaque natus voluptate nobis nulla.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-light text-center bg-white pb-2">
+              <div class="card-body text-dark">
+                <div class="img-area mb-4">
+                  <img src="./img/pescados.jpg" alt="" class="img-fluid" />
+                </div>
+                <h3 class="card-tittle">Pescado</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                  laboriosam, ut, doloribus, neque reprehenderit dolorum nulla
+                  labore amet et modi dolore ipsam ullam sed dolor repellendus
+                  nemo mollitia deserunt aspernatur!
+                </p>
+                <button class="btn bg-warning text-dark">Learn More</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-light text-center bg-white pb-2">
+              <div class="card-body text-dark">
+                <div class="img-area mb-4">
+                  <img src="./img/mariscos.jpg" alt="" class="img-fluid" />
+                </div>
+                <h3 class="card-tittle">Mariscos</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                  laboriosam, ut, doloribus, neque reprehenderit dolorum nulla
+                  labore amet et modi dolore ipsam ullam sed dolor repellendus
+                  nemo mollitia deserunt aspernatur!
+                </p>
+                <button class="btn bg-warning text-dark">Learn More</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-12 col-lg-4">
+            <div class="card text-light text-center bg-white pb-2">
+              <div class="card-body text-dark">
+                <div class="img-area mb-4">
+                  <img src="./img/envasados.jpg" alt="" class="img-fluid" />
+                </div>
+                <h3 class="card-tittle">Envasado</h3>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                  laboriosam, ut, doloribus, neque reprehenderit dolorum nulla
+                  labore amet et modi dolore ipsam ullam sed dolor repellendus
+                  nemo mollitia deserunt aspernatur!
+                </p>
+                <button class="btn bg-warning text-dark">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Most valorate Products section -->
+
+    <section id="sellers" class="sellers section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2>Our Best Sellers</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi, veniam beatae possimus optio sed adipisci rem
+                repellendus<br />
+                ut impedit perspiciatis quidem quaerat. Atque distinctio odit
+                eaque natus voluptate nobis nulla.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center">
+              <div class="card-body">
+                <img src="./img/destacada1.jpg" alt="" class="img-fluid rounded-circle" />
+                <h3 class="card-title py-2">
+                  <!-- poner nombre de pescado q mas se venda -->
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                  repudiandae minus ea, dolorum vitae, iste ex officia
+                  voluptates tempore expedita dolorem quaerat est cupiditate
+                  quod at, possimus aspernatur quae praesentium.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center">
+              <div class="card-body">
+                <img src="./img/destacada2.jpg" alt="" class="img-fluid rounded-circle" />
+                <h3 class="card-title py-2">
+                  <!-- poner nombre de pescado q mas se venda -->
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                  repudiandae minus ea, dolorum vitae, iste ex officia
+                  voluptates tempore expedita dolorem quaerat est cupiditate
+                  quod at, possimus aspernatur quae praesentium.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center">
+              <div class="card-body">
+                <img src="./img/destacada3.jpg" alt="" class="img-fluid rounded-circle" />
+                <h3 class="card-title py-2">
+                  <!-- poner nombre de pescado q mas se venda -->
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                  repudiandae minus ea, dolorum vitae, iste ex officia
+                  voluptates tempore expedita dolorem quaerat est cupiditate
+                  quod at, possimus aspernatur quae praesentium.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card text-center">
+              <div class="card-body">
+                <img src="./img/destacada4.jpg" alt="" class="img-fluid rounded-circle" />
+                <h3 class="card-title py-2">
+                  <!-- poner nombre de pescado q mas se venda -->
+                </h3>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+                  repudiandae minus ea, dolorum vitae, iste ex officia
+                  voluptates tempore expedita dolorem quaerat est cupiditate
+                  quod at, possimus aspernatur quae praesentium.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact">
+      <div class="col-md-12">
+        <form
+          action=""
+          method="post"
+          onsubmit="return validation()"
+          class="m-3 p-5 border border-secondary rounded-2 mx-auto w-75"
+        >
+          <h1>Contact with us:</h1>
+          <div class="mb-3">
+            <label for="nombre" class="form-label"
+              >Name: <span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              onchange="deleteError('nombre')"
+              class="form-control"
+              id="nombre"
+              name="nombre"
+              placeholder="obligatorio"
+            />
+            <div id="nombreHelp" class="form-text text-danger">
+              The name is obligatory
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="apellidos" class="form-label"
+              >Surname: <span class="text-danger">*</span></label
+            >
+            <input
+              type="text"
+              onchange="deleteError('apellidos')"
+              class="form-control"
+              id="apellidos"
+              name="apellidos"
+              placeholder="obligatorio"
+            />
+            <div id="apellidosHelp" class="form-text text-danger">
+              The surname is obligatory
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label"
+              >Email: <span class="text-danger">*</span></label
+            >
+            <input
+              type="email"
+              onchange="deleteError('email')"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="obligatorio"
+            />
+            <div id="emailHelp" class="form-text text-danger">
+              The email must be in the correct format
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="provincia" class="form-label"
+              >Province: <span class="text-danger">*</span></label
+            >
+            <select
+              class="form-select"
+              onchange="deleteError('provincia')"
+              aria-label="Default select example"
+            >
+              <option value="0" selected>-- Choose province</option>
+              <option value="29">Málaga</option>
+              <option value="18">Granada</option>
+              <option value="4">Almería</option>
+              <option value="5">Sevilla</option>
+              <option value="6">Huelva</option>
+              <option value="9">Jaén</option>
+              <option value="3">Córdoba</option>
+              <option value="1">Cadíz</option>
+            </select>
+            <div id="provinciaHelp" class="form-text text-danger">
+              The province is obligatory
+            </div>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="sexo"
+              id="masculino"
+              value="masculino"
+            />
+            <label class="form-check-label" for="masculino"> Male </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="sexo"
+              id="femenino"
+              value="femenino"
+            />
+            <label class="form-check-label" for="femenino"> Female </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="sexo"
+              id="otro"
+              value="otro"
+            />
+            <label class="form-check-label" for="otro"> I prefer not say </label>
+          </div>
+          <div id="sexoHelp" class="form-text text-danger">
+            You must choose one option
+          </div>
+          <div class="mb-3">
+            <label for="query" class="form-label"
+              >Your query: <span class="text-danger">*</span></label
+            >
+            <textarea
+              rows="3"
+              required
+              class="form-control"
+              placeholder="Tell us.."
+            ></textarea>
+            <div id="queryHelp" class="form-text text-danger">
+              You must write something
+            </div>
+          </div>
+          <div class="form-check mt-5">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="terminos"
+              id="terminos"
+            />
+            <a
+              id="disparador"
+              data-bs-toggle="modal"
+              data-bs-target="#condiciones"
+              class="text-success fw-bold"
+            >
+              <label class="form-check-label" for="terminos">
+                Accept terms
+              </label>
+            </a>
+          </div>
+          <button class="btn btn-outline-success mt-4 mx-auto" type="submit">
+            Submit
+          </button>
+        </form>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="condiciones"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                  PRIVACY POLICY
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <h4>Privacy Policy</h4>
+                This Privacy Policy establishes the terms in which
+                <b>Football</b> uses and protects the information that is provided
+                by its users when using its website. This company is committed to
+                the security of its users' data. When we ask you to fill out
+                personal information fields with which you can be identified, we
+                do so ensuring that it will only be used in accordance with the
+                terms of this document. However, this Privacy Policy may change
+                over time or be updated, so we recommend and emphasize that you
+                continually review this page to ensure that you agree with such
+                changes. <br /><br />
+                <h6>Information that is collected</h6>
+                Our website may collect personal information such as: Name,
+                contact information such as your email address and demographic
+                information. Likewise, when necessary, specific information may be
+                required to process an order or make a delivery or billing.
+                <br /><br />
+                <h6>Use of collected information</h6>
+                Our website uses the information in order to provide the best
+                possible service, particularly to maintain a record of users,
+                orders if applicable, and improve our products and services.
+                Emails may be sent periodically through our site with special
+                offers, new products and other advertising information that we
+                consider relevant to you or that may provide you with some
+                benefit, these emails will be sent to the address you provide and
+                may be canceled. whenever. <b>Football</b> is highly committed to
+                fulfilling the commitment to keep your information secure. We use
+                the most advanced systems and constantly update them to ensure
+                that there is no unauthorized access. <br /><br />
+                <h6>Cookies</h6>
+                A cookie refers to a file that is sent with the purpose of
+                requesting permission to be stored on your computer. Upon
+                accepting said file, it is created and the cookie is then used to
+                obtain information regarding web traffic, and also facilitates
+                future visits to a website. recurrent. Another function that
+                cookies have is that with them the websites can recognize you
+                individually and therefore provide you with the best personalized
+                service on their website. <br />Our website uses cookies to
+                identify the pages that are visited and their frequency. This
+                information is used only for statistical analysis and then the
+                information is permanently deleted. You can delete cookies at any
+                time from your computer. However, cookies help to provide a better
+                service on the websites, they do not give access to information
+                from your computer or from you, unless you want it and provide it
+                directly. You can accept or deny the use of cookies, however most
+                browsers automatically accept cookies as it serves to have a
+                better web service. You can also change your computer settings to
+                decline cookies. If they decline, you may not be able to use some
+                of our services. <br /><br />
+                <h6>Links to Third Parties</h6>
+                This website may contain links to other sites that may be of
+                interest to you. Once you click on these links and leave our page,
+                we no longer have control over the site to which you are
+                redirected and therefore we are not responsible for the terms or
+                privacy or the protection of your data on those other third party
+                sites. These sites are subject to their own privacy policies, so
+                it is recommended that you consult them to confirm that you agree
+                with them. <br /><br />
+                <h6>Control of your personal information</h6>
+                At any time you may restrict the collection or use of personal
+                information that is provided to our website. Each time you are
+                asked to fill out a form, such as the user registration form, you
+                can check or uncheck the option to receive information by email.
+                If you have selected the option to receive our newsletter or
+                advertising, you can cancel it at any time. This company will not
+                sell, assign or distribute personal information that is collected
+                without your consent, unless required by a judge with a court
+                order. <b>Football</b> reserves the right to change the terms of
+                this Privacy Policy at any time.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Understood</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+
+    <footer class="bg-dark p-2 text-center">
+      <div class="container">
+        <p class="text-white">All Right Reserved @Pescaderia María Jesus</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
