@@ -38,6 +38,13 @@ body {
   top: 0;
   left: 0;
 }
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
 .navbar-nav a {
   font-size: 15px;
   text-transform: uppercase;
@@ -76,6 +83,7 @@ body {
 .sellers .card{
     box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
 }
+
 
 /* ----- responsive ----- */
 @media only screen and(min-width: 768px) and (max-width: 991px){
