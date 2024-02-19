@@ -5,8 +5,14 @@
 /*comment: project for lenguajes de Marcas - 1ª DAM*/
 /**************************************************/
 
+@font-face {
+  font-family: texto2;
+  src: url(../fonts/Agina.otf);
+}
+
 body {
-  background-color: f1fbff;
+  background-color: #f1fbff;
+  font-family: texto2;
 }
 .section-padding {
   padding: 100px 0;
