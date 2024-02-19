@@ -49,7 +49,7 @@ body {
 .carousel-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
 }
 
 .navbar-nav a {
@@ -75,56 +75,134 @@ body {
   height: 100vh;
 }
 
-.services .card-body i{
-    font-size: 50px;
+.services .card-body i {
+  font-size: 50px;
 }
 
-.sellers .card-body i{
-    font-size: 20;
+.sellers .card-body i {
+  font-size: 20;
 }
 
-.portfolio .card{
-    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+.portfolio .card {
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
 }
 
-.sellers .card{
-    box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+.sellers .card {
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
 }
-
 
 /* ----- responsive ----- */
-@media only screen and(min-width: 768px) and (max-width: 991px){
-    .carousel-caption{
-        bottom: 370px;
-    }
-    .carousel-caption p{
-        width: 100%;
-    }
-    .card{
-        margin-bottom: 30px;
-    }
-    .img-area img{
-        width: 100%;
-    }
+@media only screen and(min-width: 768px) and (max-width: 991px) {
+  .carousel-caption {
+    bottom: 370px;
+  }
+  .carousel-caption p {
+    width: 100%;
+  }
+  .card {
+    margin-bottom: 30px;
+  }
+  .img-area img {
+    width: 100%;
+  }
 }
 
-
 @media only screen and (max-widht: 767px) {
-  .navbar-nav{
+  .navbar-nav {
     text-align: center;
   }
-  .carousel-caption{
+  .carousel-caption {
     bottom: 125px;
   }
-  .carousel-caption h5{
+  .carousel-caption h5 {
     font-size: 17px;
   }
-  .carousel-caption a{
+  .carousel-caption a {
     padding: 10px 15px;
   }
-  .carousel-caption{
+  .carousel-caption {
     width: 100%;
     line-height: 1.6;
     font-size: 12px;
   }
+}
+
+.btn-logo {
+  place-items: center;
+  background: #e3edf7;
+  padding: 0.4em;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.btn-logo:hover {
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transform: translateY(0.5em);
+}
+
+.btn-logo svg {
+  transition: transform 0.5s;
+}
+
+.btn-logo:hover svg {
+  transform: scale(0.9);
+  fill: #333333;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.mapcontainer {
+  width: auto;
+  height: auto;
+}
+
+/*modal*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  background-color: #050505;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  width: 80%;
+}
+
+.close {
+  color: #ffffff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
