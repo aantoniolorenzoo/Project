@@ -34,18 +34,16 @@ function validation() {
     if (emailParts.length !== 2) {
       return false; // Si no hay exactamente una "@" retornamos falso
     }
-    
+
     var domain = emailParts[1];
     var domainParts = domain.split(".");
     if (domainParts.length < 2) {
       return false; // Si el dominio no tiene al menos un punto y un carácter después del punto, retornamos falso
     }
-  
+
     return true;
   }
-  
-  
-  
+
   // Validación de la provincia
   var provincia = document.getElementById("provincia").value;
   if (provincia === "0") {
@@ -92,3 +90,4 @@ function isValidEmail(email) {
   var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return emailRegex.test(email);
 }
+

@@ -91,42 +91,6 @@ body {
   box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
 }
 
-/* ----- responsive ----- */
-@media only screen and(min-width: 768px) and (max-width: 991px) {
-  .carousel-caption {
-    bottom: 370px;
-  }
-  .carousel-caption p {
-    width: 100%;
-  }
-  .card {
-    margin-bottom: 30px;
-  }
-  .img-area img {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-widht: 767px) {
-  .navbar-nav {
-    text-align: center;
-  }
-  .carousel-caption {
-    bottom: 125px;
-  }
-  .carousel-caption h5 {
-    font-size: 17px;
-  }
-  .carousel-caption a {
-    padding: 10px 15px;
-  }
-  .carousel-caption {
-    width: 100%;
-    line-height: 1.6;
-    font-size: 12px;
-  }
-}
-
 .btn-logo {
   place-items: center;
   background: #e3edf7;
@@ -180,13 +144,12 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 100%; /*areglar */
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-content {
-  background-color: #050505;
+  background-color: #fff;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #ffffff;
@@ -205,4 +168,40 @@ body {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* ----- responsive ----- */
+@media only screen and(min-width: 768px) and (max-width: 991px) {
+  .carousel-caption {
+    bottom: 370px;
+  }
+  .carousel-caption p {
+    width: 100%;
+  }
+  .card {
+    margin-bottom: 30px;
+  }
+  .img-area img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-widht: 767px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .carousel-caption {
+    bottom: 125px;
+  }
+  .carousel-caption h5 {
+    font-size: 17px;
+  }
+  .carousel-caption a {
+    padding: 10px 15px;
+  }
+  .carousel-caption {
+    width: 100%;
+    line-height: 1.6;
+    font-size: 12px;
+  }
 }
