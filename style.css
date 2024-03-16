@@ -31,7 +31,7 @@ body {
   letter-spacing: 2px;
   margin-top: 25px;
 }
-.carousel-caption {
+.carousel-caption p {
   width: 60%;
   margin: auto;
   font-size: 18px;
@@ -80,7 +80,7 @@ body {
 }
 
 .sellers .card-body i {
-  font-size: 20;
+  font-size: 20px;
 }
 
 .portfolio .card {

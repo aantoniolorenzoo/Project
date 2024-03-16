@@ -1,93 +1,73 @@
-function validation() {
-  var isValid = true;
+const form = document.querySelector("form");
+const nombre = document.getElementById("nombre");
+const apellidos = document.getElementById("apellidos");
+const email = document.getElementById("email");
+const provincia = document.getElementById("provincia");
+const genderInputs = document.querySelectorAll('input[name="sexo"]');
+const genderHelp = document.getElementById("sexoHelp");
 
-  // Validación del nombre
-  var nombre = document.getElementById("nombre").value.trim();
-  if (nombre === "") {
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  checkInputs();
+});
+
+function checkInputs() {
+  const nombreValue = nombre.value.trim();
+  const apellidosValue = apellidos.value.trim();
+  const emailValue = email.value.trim();
+  const provinciaValue = provincia.value.trim();
+  let isValid = true;
+  const lettersRegex = /^[a-zA-Z\s]+$/;
+
+  if (nombreValue === "") {
     document.getElementById("nombreHelp").innerText =
       "El nombre es obligatorio";
     isValid = false;
+  } else {
+    document.getElementById("nombreHelp").innerText = "";
   }
 
-  // Validación de los apellidos
-  var apellidos = document.getElementById("apellidos").value.trim();
-  if (apellidos === "") {
+  if (apellidosValue === "") {
     document.getElementById("apellidosHelp").innerText =
       "Los apellidos son obligatorios";
     isValid = false;
+  } else {
+    document.getElementById("apellidosHelp").innerText = "";
   }
 
-  // Validación del email
-  var email = document.getElementById("email").value.trim();
-  if (email === "") {
+  if (emailValue === "") {
     document.getElementById("emailHelp").innerText =
       "El correo electrónico es obligatorio";
     isValid = false;
-  } else if (!isValidEmail(email)) {
+  } else if (!isValidEmail(emailValue)) {
     document.getElementById("emailHelp").innerText =
       "El correo electrónico debe tener un formato válido";
     isValid = false;
+  } else {
+    document.getElementById("emailHelp").innerText = "";
   }
 
-  function isValidEmail(email) {
-    var emailParts = email.split("@");
-    if (emailParts.length !== 2) {
-      return false; // Si no hay exactamente una "@" retornamos falso
-    }
-
-    var domain = emailParts[1];
-    var domainParts = domain.split(".");
-    if (domainParts.length < 2) {
-      return false; // Si el dominio no tiene al menos un punto y un carácter después del punto, retornamos falso
-    }
-
-    return true;
-  }
-
-  // Validación de la provincia
-  var provincia = document.getElementById("provincia").value;
-  if (provincia === "0") {
+  if (provinciaValue === "0") {
     document.getElementById("provinciaHelp").innerText =
       "Debe seleccionar una provincia";
     isValid = false;
-  }
-
-  // Validación del sexo
-  var sexo = document.querySelector('input[name="sexo"]:checked');
-  if (!sexo) {
-    document.getElementById("sexoHelp").innerText =
-      "Debe seleccionar una opción";
-    isValid = false;
   } else {
-    document.getElementById("sexoHelp").innerText = ""; // Desaparece el mensaje de error si se selecciona un sexo
+    document.getElementById("provinciaHelp").innerText = "";
   }
 
-  // Validación de la consulta
-  var query = document.querySelector("#query").value.trim();
-  if (query === "") {
-    document.getElementById("queryHelp").innerText =
-      "Debe escribir algo en su consulta";
-    isValid = false;
-  } else {
-    document.getElementById("queryHelp").innerText = ""; // Desaparece el mensaje de error si se escribe en la consulta
-  }
+  
 
-  // Validación de aceptación de términos
-  var termsAccepted = document.getElementById("terminos").checked;
-  if (!termsAccepted) {
-    alert("Debe aceptar los términos y condiciones");
-    isValid = false;
+  if (isValid) {
+    form.submit();
   }
+}
 
-  return isValid;
+function isValidEmail(email) {
+  return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+    email
+  );
 }
 
 function deleteError(elementId) {
   document.getElementById(elementId + "Help").innerText = "";
 }
-
-function isValidEmail(email) {
-  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return emailRegex.test(email);
-}
-
